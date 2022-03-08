@@ -1,0 +1,12 @@
+# importing package
+import pandas as pd
+from better_profanity import profanity 
+
+#importing the text file to be censored
+text= pd.read_fwf("file path")
+
+# do censoring
+censored = profanity.censor(text) 
+
+# view output
+print(censored)
